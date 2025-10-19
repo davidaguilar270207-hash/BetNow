@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html language="es.es" dir="ltr">
+<head>
+    <title>BetNow</title>
+    <!-- Aquí empiezan los meta -->
+     <meta charset="UTF-8">
+     <meta name="date" content="18/09/2025">
+     <meta name="generator" content="VisualStudio">
+     <meta name="author" content="David Aguilar">
+     <meta name="description" content="BetNow, página de casa de apuestas no oficial para el proyecto de lenguaje de marcas">
+     <meta name="keywords" content="BetNow, David Aguilar, ASIR">
+     <meta name="locality" content="Madrid, España">
+     <meta name="rating" content="general">
+     <meta name="robot" content="nofollow">
+        <meta http-equiv="refresh" content="10">
+    <!--Aquí empiezan los link-->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+<!--Aquí el apartado style para el reloj-->
+    <style>
+        #reloj {
+            font-size: 0.9em;
+            font-weight:900;
+            margin-top: 100px;
+            color: aliceblue;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(16, 15, 27);">
+    
+    <!--header/cabecera-->
+
+    <div id="header" style="background-color: rgba(16, 15, 27)" align="margin-left">
+
+        <img src="images/banner.png" alt="banner" width="1500" height="100"><br>
+        <a href="https://cinfasalud.cinfa.com/p/ludopatia/">Riesgos ludopatía</a> <br>
+        <a href="https://www.selae.es/es/web-corporativa/responsabilidad-social/gestion-responsable-del-juego/los-10-consejos">Cómo jugar con responsabilidad</a> <br>
+    </div>
+
+<div id="body" style="background-color: rgb(16, 15, 27)" align="margin-left">
+
+<!--Aquí va a estar el mapa donde el usuario va a acceder a los diferentes deportes-->
+
+<img src="images/mapa.png" usemap="#mapa1" alt="secciones">
+<map name="#mapa1">
+    <area href="fútbol.html" shape="rect" coords="(51, 257) (120, 278)" alt="fútbol">
+    <area href="tenis.html" shape="rect" coords="(274, 256) (354, 279)" alt="tenis">
+    <area href="baloncesto.html" shape="rect" coords="(496, 256) (578, 278)">
+</map>
+
+
+<!--Contenedor donde aparecen la fecha y la hora-->
+<div id="reloj"></div>
+
+
+<!--Script de JavaScript-->
+<script>
+    function actualizarReloj() {
+      const ahora = new Date();
+
+      const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const opcionesHora = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+      const fecha = ahora.toLocaleDateString('es-ES', opcionesFecha);
+      const hora = ahora.toLocaleTimeString('es-ES', opcionesHora);
+
+      document.getElementById('reloj').innerHTML = `${fecha} - ${hora}`;
+    }
+
+    setInterval(actualizarReloj, 1000);
+    actualizarReloj();
+</script>
+</body>
+</html>
