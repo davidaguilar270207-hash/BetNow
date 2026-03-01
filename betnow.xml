@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<betnow>
+  
+  <navegacion>
+    <enlace>Deportes</enlace>
+    <enlace>En vivo</enlace>
+    <enlace>Casino</enlace>
+  </navegacion>
+
+  <sidebar>
+    <titulo>Populares</titulo>
+    <deportes>
+      <deporte icono="fútbol">Fútbol</deporte>
+      <deporte icono="baloncesto">Baloncesto</deporte>
+      <deporte icono="tenis">Tenis</deporte>
+    </deportes>
+  </sidebar>
+
+  <contenido_principal>
+    <banner>
+      <titulo>Bono de Bienvenida</titulo>
+      <descripcion>¡Gana hasta 200€ en bonos de apuestas!</descripcion>
+    </banner>
+
+    <apuestas_en_vivo>
+      <partido id="p001">
+        <equipo_local>Atletico de Madrid</equipo_local>
+        <equipo_visitante>Real Madrid</equipo_visitante>
+        <cuotas moneda="euro">
+          <cuota tipo="1">1.50</cuota>
+          <cuota tipo="X">4.20</cuota>
+          <cuota tipo="2">6.80</cuota>
+        </cuotas>
+      </partido>
+    </apuestas_en_vivo>
+  </contenido_principal>
+
+  <gestion_cupon>
+    <titulo_seccion>Tu Cupón</titulo_seccion>
+    <seleccion>
+      <evento>Atletico de Madrid a Ganar</evento>
+      <cuota_seleccionada moneda="euro">1.50</cuota_seleccionada>
+    </seleccion>
+    <apuesta>
+      <importe_sugerido>0.00</importe_sugerido>
+    </apuesta>
+  </gestion_cupon>
+
+</betnow>

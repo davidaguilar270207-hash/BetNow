@@ -1,0 +1,72 @@
+body {
+    background-color:#0f171e ;
+    color: #ffffff;
+    font-family: 'SegoeUI', sans-serif;
+}
+.barranav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a242d;
+    border-bottom: 1px solid #2d3844;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffff;
+}
+.logo span  {
+    color: rgb(23, 203, 32);
+}
+.principal {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px; /*3 cols*/
+    gap: 20px;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+.barralat, .content, .cupones {
+    background-color: #1a242d;
+    padding: 15px;
+    border-radius: 8px;
+}
+.banner {
+    background: linear-gradient(90deg, #1a242d, #2d3844);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid color rgb(23, 203, 32);
+}
+.cuotas button {
+    background: #2d3844 ;
+    color: #39ff14;
+    border: 1px solid #3d4a59;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.cuotas button:hover {
+    background: #39ff14;
+    color: black;
+}
+.apostar {
+    width: 100%;
+    background-color: #39ff14;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    margin-top:10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none; 
+    display: inline-block; 
+}
